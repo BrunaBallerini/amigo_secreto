@@ -1,8 +1,24 @@
-<h1>Olá.</h1>
-<ul>
+<%
+=begin%>
+ <h1>Olá pessoal.</h1> 
+<%
+=end%>
+<%
+=begin%>
+ <ul>
   <% @items.each do |item| %>
     <li> <%= item %> </li>
   <% end %>
-</ul>
-<a href="<%= about_path %>">Sobre</a>
-<a href="<%= cars_path %>">Carros</a>
+</ul> 
+<%
+=end%>
+
+<div class="row py-lg-5">
+  <div class="col-lg-6 col-md-8 mx-auto">
+    <h1 class="fw-light">Veículos</h1>
+    <p class="lead text-body-secondary">Projeto para treinamento em Ruby in Rails 7.</p>
+    <p>
+      <a href="/cars" class="btn btn-primary my-2">Carros</a>
+    </p>
+  </div>
+</div>

@@ -1,29 +1,29 @@
 <h1>Lista de carros</h1>
 
-<table style="width:80%; border: 2px solid #000">
-  <thead style="background-color: #CFCFCF">
+<table class="table">
+  <thead>
     <tr>
       <th>id</th>
       <th>Nome</th>
       <th>Modelo</th>
       <th>Ano</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <% @cars.each do |car| %>
       <tr>
-        <th><a href="<%= cars_show_path(car.id) %>"><%= car.id %></a></th> 
-        <%
+        <th><%= car.id %></th> 
+        <th><%= car.name %></th>
+        <th><%= car.model %></th>
+        <th><%= car.year %></th>
+        <th style="width:80px"><a href="<%= cars_show_path(car.id) %>" class="btn btn-primary">Mostrar</a></th> 
+<%
 =begin%>
  <th><a href="/cars/<%= car.id %>"><%= car.id %></a></th> 
 <%
 =end%>
-        <th><%= car.name %></th>
-        <th><%= car.model %></th>
-        <th><%= car.year %></th>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<a href="<%=about_path%>">Sobre</a>
