@@ -6,10 +6,10 @@ class HomeController < ApplicationController
   end
 
   def cars
-    @cars = Cars.all
+    @cars = Car.all
   end
 
   def show
-    @car = Cars.find(params[:id])
+    @car = Car.find(params[:id])
   end
 end
