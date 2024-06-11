@@ -1,24 +1,8 @@
-# README
+<h4 align="center"> 
+    :construction: Estudo de uma aplicação de Ruby on Rails  :construction:
+</h4>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<h4 align="center"> 
+    :heavy_check_mark: Tecnologias
+</h4>
+<h3> - Ruby on Rails</h3>
