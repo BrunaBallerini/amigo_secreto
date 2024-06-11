@@ -1,18 +1,15 @@
 class HomeController < ApplicationController
   def index
-    @items = Dado.todos
   end
 
   def about
   end
 
   def cars
-    @cars = Cars.todos
+    @cars = Cars.all
   end
 
   def show
-    cars = Cars.todos
-    id = params[:id]
-    @car = cars.find { |car| car.id == id }
+    @car = Cars.find(params[:id])
   end
 end
