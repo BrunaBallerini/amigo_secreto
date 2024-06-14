@@ -1,6 +1,10 @@
+<h1> Mostrando o carro </h1>
+
 <section class="text-center container">
-    <h1><%= @car.name %></h1>
-    <h3><%= @car.model %></h3>
-    <h3><%= @car.year %></h3>
-    <a href="/cars" class="btn btn-warning">Voltar para a lista</a>
+    <div style="text-align:left">
+        <div>Nome: <%= @car.name %></div>
+        <div>Modelo: <%= @car.model %></div>
+        <div>Ano: <%= @car.year %></div>
+        <a href="/cars" class="btn btn-warning">Voltar para a lista</a>
+    </div>
 </section>
