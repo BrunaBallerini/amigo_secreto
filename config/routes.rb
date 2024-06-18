@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   root "home#index", as: 'home'
   get '/about', to: 'home#about', as: 'about'
   get '/cars', to: 'home#cars', as: 'cars'
+  post '/cars', to: 'home#create', as: 'cars_create'
+  get '/cars/new', to: 'home#new', as: 'car_new'
   get '/cars/:id', to: 'home#show', as: 'cars_show'
   get '/cars/:id/edit', to: 'home#edit', as: 'cars_edit'
   get '/cars/:id/delete', to: 'home#delete', as: 'cars_delete'
