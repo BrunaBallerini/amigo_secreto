@@ -2,10 +2,9 @@
 
 <section class="text-center container">
     <div style="text-align:left">
-        <form>
-            <div>Nome: <input type="text" value="<%= @car.name %>" name="name"></div>
-            <div>Modelo: <input type="text" value="<%= @car.model %>" name="model"></div>
-            <div>Ano: <input type="text" value="<%= @car.year %>" name="year"></div>
+        <form action="<%= cars_change_path(@car)%>" method="POST">
+            <input type="hidden" name="_method" value="PUT">
+            <%= render "form"%>
             <hr>
             <button type="submit", class="btn btn-primary">Enviar</button>
             <a href="/cars" class="btn btn-warning">Voltar para a lista</a>
