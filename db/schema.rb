@@ -10,11 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_11_161342) do
+ActiveRecord::Schema[7.1].define(version: 2024_06_21_172116) do
   create_table "cars", force: :cascade do |t|
     t.string "name", limit: 150
     t.string "model", limit: 150
     t.integer "year"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "fornecedores", force: :cascade do |t|
+    t.string "nome", limit: 150
+    t.string "cnpj", limit: 25
+    t.text "endereco"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "fornecedors", force: :cascade do |t|
+    t.string "nome", limit: 150
+    t.string "cnpj", limit: 25
+    t.text "endereco"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
