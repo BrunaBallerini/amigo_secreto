@@ -18,6 +18,9 @@ class HomeController < ApplicationController
   end
 
   def delete
+    @car = Car.find(params[:id])
+    @car.destroy
+    redirect_to cars_path
   end
 
   def new

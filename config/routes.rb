@@ -15,6 +15,6 @@ Rails.application.routes.draw do
   get '/cars/:id', to: 'home#show', as: 'cars_show'
   put '/cars/:id', to: 'home#change', as: 'cars_change'
   get '/cars/:id/edit', to: 'home#edit', as: 'cars_edit'
-  get '/cars/:id/delete', to: 'home#delete', as: 'cars_delete'
+  delete '/cars/:id', to: 'home#delete', as: 'cars_delete'
 
 end

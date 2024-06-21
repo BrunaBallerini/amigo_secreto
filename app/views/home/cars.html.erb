@@ -25,7 +25,10 @@
           <th style="width:300px">
             <a href="<%= cars_show_path(car.id) %>" class="btn btn-primary">Mostrar</a>
             <a href="<%= cars_edit_path(car.id) %>" class="btn btn-warning">Editar</a>
-            <a href="<%= cars_delete_path(car.id) %>" class="btn btn-danger">Apagar</a>
+            <form style="display:inline" action="<%= cars_delete_path(car)%>" onsubmit="return confirm(Confirma?)" method="POST">
+              <input type="hidden" name="_method" value="DELETE">
+              <button type="submit" class="btn btn-danger">Apagar</button>
+            </form>
           </th> 
         </tr>
       <% end %>
