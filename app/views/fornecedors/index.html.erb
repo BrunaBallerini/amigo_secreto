@@ -6,9 +6,9 @@
   <% @fornecedors.each do |fornecedor| %>
     <%= render fornecedor %>
     <p>
-      <%= link_to "Show this fornecedor", fornecedor %>
+      <%= link_to "Mostrar", fornecedor, class:"btn btn-warning" %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New fornecedor", new_fornecedor_path %>
+<%= link_to "Novo Fornecedor", new_fornecedor_path, class:"btn btn-primary"%>

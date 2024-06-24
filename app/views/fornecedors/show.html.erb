@@ -3,8 +3,13 @@
 <%= render @fornecedor %>
 
 <div>
-  <%= link_to "Edit this fornecedor", edit_fornecedor_path(@fornecedor) %> |
-  <%= link_to "Back to fornecedors", fornecedors_path %>
+  <%= link_to "Editar", edit_fornecedor_path(@fornecedor), class:"btn btn-primary" %>
+  <br>
 
-  <%= button_to "Destroy this fornecedor", @fornecedor, method: :delete %>
+  <br>
+  <%= link_to "Voltar", fornecedors_path, class:"btn btn-warning" %>
+  <br>
+
+  <br>
+  <%= button_to "Deletar", @fornecedor, class:"btn btn-danger", method: :delete, form: { onsubmit: "retun confirm(Confima?)" }%>
 </div>

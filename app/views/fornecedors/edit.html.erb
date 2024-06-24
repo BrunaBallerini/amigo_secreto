@@ -1,10 +1,10 @@
-<h1>Editing fornecedor</h1>
+<h1>Editar fornecedor</h1>
 
 <%= render "form", fornecedor: @fornecedor %>
 
 <br>
 
 <div>
-  <%= link_to "Show this fornecedor", @fornecedor %> |
-  <%= link_to "Back to fornecedors", fornecedors_path %>
+  <%= link_to "Mostrar", @fornecedor, class:"btn btn-primary" %> 
+  <%= link_to "Voltar", fornecedors_path, class:"btn btn-warning" %>
 </div>
